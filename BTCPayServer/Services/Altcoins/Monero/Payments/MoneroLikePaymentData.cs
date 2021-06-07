@@ -1,4 +1,3 @@
-#if ALTCOINS
 using BTCPayServer.Client.Models;
 using BTCPayServer.Payments;
 using BTCPayServer.Services.Altcoins.Monero.Utils;
@@ -66,4 +65,3 @@ namespace BTCPayServer.Services.Altcoins.Monero.Payments
         }
     }
 }
-#endif

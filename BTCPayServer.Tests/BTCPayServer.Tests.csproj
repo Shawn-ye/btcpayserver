@@ -30,9 +30,9 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup Condition="'$(Altcoins)' != 'true'">
+  <!-- <ItemGroup Condition="'$(Altcoins)' != 'true'">
     <Compile Remove="AltcoinTests\**\*.cs"></Compile>
-  </ItemGroup>
+  </ItemGroup> -->
   <ItemGroup>
     <None Update=".dockerignore">
       <DependentUpon>Dockerfile</DependentUpon>

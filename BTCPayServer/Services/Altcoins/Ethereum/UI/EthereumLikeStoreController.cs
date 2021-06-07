@@ -1,4 +1,3 @@
-#if ALTCOINS
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -278,4 +277,3 @@ namespace BTCPayServer.Services.Altcoins.Ethereum.UI
         public string RootAddress { get; set; }
     }
 }
-#endif

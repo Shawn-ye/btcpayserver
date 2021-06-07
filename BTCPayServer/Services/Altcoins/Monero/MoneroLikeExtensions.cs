@@ -1,4 +1,3 @@
-#if ALTCOINS
 using System;
 using System.Linq;
 using BTCPayServer.Abstractions.Contracts;
@@ -70,4 +69,3 @@ namespace BTCPayServer.Services.Altcoins.Monero
         }
     }
 }
-#endif

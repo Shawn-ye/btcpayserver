@@ -1,4 +1,3 @@
-#if ALTCOINS
 using BTCPayServer.Payments;
 
 namespace BTCPayServer.Services.Altcoins.Ethereum.Payments
@@ -41,4 +40,3 @@ namespace BTCPayServer.Services.Altcoins.Ethereum.Payments
         public string DepositAddress { get; set; }
     }
 }
-#endif

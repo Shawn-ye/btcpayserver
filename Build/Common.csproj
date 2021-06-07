@@ -27,7 +27,7 @@
     <DefineConstants>$(DefineConstants);RAZOR_RUNTIME_COMPILE</DefineConstants>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Altcoins)' == 'true'">
+  <PropertyGroup>
     <DefineConstants>$(DefineConstants);ALTCOINS</DefineConstants>
   </PropertyGroup>
 </Project>

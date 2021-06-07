@@ -1,4 +1,3 @@
-#if ALTCOINS
 using System.Collections.Generic;
 using System.Linq;
 using BTCPayServer.Abstractions.Contracts;
@@ -42,4 +41,3 @@ namespace BTCPayServer.Services.Altcoins.Ethereum.Services
         }
     }
 }
-#endif

@@ -1,4 +1,3 @@
-#if ALTCOINS
 using BTCPayServer.Payments;
 
 namespace BTCPayServer.Services.Altcoins.Monero.Payments
@@ -31,4 +30,3 @@ namespace BTCPayServer.Services.Altcoins.Monero.Payments
         public decimal NextNetworkFee { get; set; }
     }
 }
-#endif

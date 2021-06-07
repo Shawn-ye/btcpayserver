@@ -1,4 +1,3 @@
-#if ALTCOINS
 using System.Globalization;
 using System.Numerics;
 using BTCPayServer.Client.Models;
@@ -74,4 +73,3 @@ namespace BTCPayServer.Services.Altcoins.Ethereum.Payments
         }
     }
 }
-#endif

@@ -22,11 +22,7 @@ namespace BTCPayServer.Services
 #else
 			Build = "Release";
 #endif
-#if ALTCOINS
             AltcoinsVersion = true;
-#else
-            AltcoinsVersion = false;
-#endif
 
             Environment = env;
             NetworkType = provider.NetworkType;

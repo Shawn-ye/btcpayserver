@@ -54,10 +54,8 @@ using NBXplorer.DerivationStrategy;
 using Newtonsoft.Json;
 using NicolasDorier.RateLimits;
 using Serilog;
-#if ALTCOINS
 using BTCPayServer.Services.Altcoins.Monero;
 using BTCPayServer.Services.Altcoins.Ethereum;
-#endif
 namespace BTCPayServer.Hosting
 {
     public static class BTCPayServerServices
@@ -84,10 +82,8 @@ namespace BTCPayServer.Hosting
             services.AddSingleton<BTCPayNetworkJsonSerializerSettings>();
 
             services.AddPayJoinServices();
-#if ALTCOINS
             services.AddMoneroLike();
             services.AddEthereumLike();
-#endif
             services.TryAddSingleton<SettingsRepository>();
             services.TryAddSingleton<ISettingsRepository>(provider => provider.GetService<SettingsRepository>());
             services.TryAddSingleton<LabelFactory>();

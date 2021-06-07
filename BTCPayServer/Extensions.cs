@@ -483,15 +483,13 @@ namespace BTCPayServer
 
             var networkProvider = new BTCPayNetworkProvider(_networkType);
             var filtered = networkProvider.Filter(supportedChains.ToArray());
-#if ALTCOINS
             supportedChains.AddRange(filtered.GetAllElementsSubChains(networkProvider));
             supportedChains.AddRange(filtered.GetAllEthereumSubChains(networkProvider));
-#endif
-#if !ALTCOINS
-            var onlyBTC = supportedChains.Count == 1 && supportedChains.First() == "BTC";
-            if (!onlyBTC)
-                throw new ConfigException($"This build of BTCPay Server does not support altcoins");
-#endif
+//#if !ALTCOINS
+//            var onlyBTC = supportedChains.Count == 1 && supportedChains.First() == "BTC";
+//            if (!onlyBTC)
+//                throw new ConfigException($"This build of BTCPay Server does not support altcoins");
+//#endif
             var result = networkProvider.Filter(supportedChains.ToArray());
             foreach (var chain in supportedChains)
             {

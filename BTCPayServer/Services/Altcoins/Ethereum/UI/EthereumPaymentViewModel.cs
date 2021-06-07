@@ -1,4 +1,3 @@
-#if ALTCOINS
 using System;
 
 namespace BTCPayServer.Services.Altcoins.Ethereum.UI
@@ -16,4 +15,3 @@ namespace BTCPayServer.Services.Altcoins.Ethereum.UI
         public long Index { get; set; }
     }
 }
-#endif

@@ -41,7 +41,7 @@ namespace BTCPayServer
             _NBXplorerNetworkProvider = new NBXplorerNetworkProvider(networkType);
             NetworkType = networkType;
             InitBitcoin();
-#if ALTCOINS
+
             InitLiquid();
             InitLiquidAssets();
             InitLitecoin();
@@ -81,7 +81,6 @@ namespace BTCPayServer
             // Disabled because of https://twitter.com/Cryptopia_NZ/status/1085084168852291586
             //InitBPlus();
             //InitUfo();
-#endif
         }
 
         /// <summary>

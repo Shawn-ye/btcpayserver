@@ -18,10 +18,8 @@ namespace BTCPayServer.Payments
         private static PaymentType[] _paymentTypes =
         {
             BTCLike, LightningLike,
-#if ALTCOINS
             MoneroLike,
             EthereumPaymentType.Instance
-#endif
         };
         /// <summary>
         /// On-Chain UTXO based, bitcoin compatible
@@ -32,12 +30,10 @@ namespace BTCPayServer.Payments
         /// </summary>
         public static LightningPaymentType LightningLike => LightningPaymentType.Instance;
 
-#if ALTCOINS
         /// <summary>
         /// Monero payment
         /// </summary>
         public static MoneroPaymentType MoneroLike => MoneroPaymentType.Instance;
-#endif
 
         public static bool TryParse(string paymentType, out PaymentType type)
         {
