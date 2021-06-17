@@ -16,7 +16,7 @@ namespace BTCPayServer
                 CryptoImagePath = "/imlegacy/eth.png",
                 ShowSyncSummary = true,
                 CoinType = 1,
-                ChainId = 1,
+                ChainId = 4,
                 Divisibility = 18,
             });
         }
